@@ -4,9 +4,10 @@ RADIAN_TO_DEGREE = 180 / Math.PI
 DEGREE_TO_RADIAN = Math.PI / 180
 
 # 
-# シェイプトゥイーン用クラス
-# @param {Object} pathes: 変形情報
-# @param {Number} morph: 変形状態
+# アンカーポイントごとに角丸具合を変えられる独自のストローク用クラス
+# @param {paper.Path} path: 基本の形状
+# @param {Number} width: 線の太さ
+# @param {Array} settings: 各アンカーポイントの角丸半径（外側と内側）
 #
 class CustomStroke extends paper.Path
 	constructor: (path, width, settings)->
