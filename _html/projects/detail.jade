@@ -1,0 +1,69 @@
+extends ../_include/_layout
+
+block title
+	title PLAYFUL BOOKS | PROJECTS | BUTTON INC.
+
+block body
+	body.p-page-projects-detail
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main
+			div.c-ttl
+				h1.c-ttl__main
+					img(src="/images/projects/ttl-project-main.png" width="250")
+
+			section.p-sec-projects-detail
+				div.p-sec-projects-image(style="background-image:url('/images/about/pic-member-dummy.png')")
+					img(src="/images/about/pic-member-dummy.png")
+				
+				div.c-container
+
+					div.p-sec-projects-detail
+						div.p-sec-projects-detail__title
+							|PLAYFUL BOOKS
+						div.p-sec-projects-detail__lead
+							スマートフォンで楽しさひろがる「まほうのえほん」
+						div.p-sec-projects-detail-info
+							span
+								|Sep 5, 2015 Product
+							span Link: 
+								a(href="") http://playful-books.com/
+							span
+								|Client:
+							span
+								|Agency:
+						p.p-sec-projects-detail__txt 
+							"PLAYFUL BOOKS"はスマートフォンをセットして体験性を拡張できる、魔法のような絵本です。専用の絵本にスマートフォンをセットする事で、今読んでいるページに合わせたBGMや効果音、照明などの演出や、絵本をノックすると返答が返ってくる等のインタラクティブ性を付与し、アナログな絵本の体験性を拡張する事ができます。「くれよんのかくれんぼ」「こん こん こん」の２タイトルの絵本（日本語版/英語版）を販売中です。
+							
+						div.p-sec-projects-detail__movie
+							|<iframe src="https://www.youtube.com/embed/l1YqwzVE7C8" frameborder="0" allowfullscreen></iframe>
+							
+						div.p-sec-projects-detail__thums.p-thum-units
+							div.p-thum-units__unit
+								img(src="/images/about/pic-member-dummy.png")
+							div.p-thum-units__unit
+								img(src="/images/about/pic-member-dummy.png")
+							div.p-thum-units__unit
+								img(src="/images/about/pic-member-dummy.png")
+								
+						div.p-sec-projects-detail-credit
+							div.p-sec-projects-detail-credit__title
+								|CREDIT
+							p.p-sec-projects-detail-credit__content
+								|木村 幸司 ( Produce / Planning / Art Direction / Technical Direction ) / 浦谷 和生 ( Produce / Planning / Direction ) / 道久 好子 ( Direction / Copy Writing ) / 木富 慎介 ( Design / Illustration )
+								
+								
+						div.p-sec-projects-detail-award
+							div.p-sec-projects-detail-award__title
+								|AWARD
+							p.p-sec-projects-detail-award__content
+								|Yahoo Internet Creative Award 2014 スマートデバイスイノベーション部門 SILVER
+					
+					div.p-sec-contact
+						div.c-btn
+							a(href="")
+								お問い合わせ
+				
+			include ../_include/_footer
+				

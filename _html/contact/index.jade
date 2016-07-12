@@ -1,0 +1,115 @@
+extends ../_include/_layout
+
+block title
+	title CONTACT | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='CONTACT | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/contact/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-contact
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+		
+			//SEC : トップブロック
+			section.p-sec-contact-main
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/contact/ttl-contact-main.png" width="250")
+					
+				div.p-sec-contact__lead.c-lead
+					p.c-lead__txt
+						弊社へのお問い合わせは下記フォームよりお願い致します。お電話でのお問い合わせは 06-6445-5471（平日10:00〜19:00）までお願い致します。<br>
+						お問い合わせフォーム利用の際は、必ず<a href="/privacy/">個人情報保護方針</a>についてご確認頂き、同意の上ご送信ください。
+						
+			//SEC : 採用職種別
+			section.p-form-set.c-form
+				form(action="https://pro.form-mailer.jp/fm/service/Forms/complete", method="post", name="form1", ENCTYPE="multipart/form-data")
+					<input type="hidden" name="key" value="c9412d5e102908" >
+					<input type="hidden" name="code" value="utf8">
+					dl.p-form-set__unit
+						dt
+							p お名前
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="お名前", required, name="field_1669771")
+					dl.p-form-set__unit
+						dt
+							p ふりがな
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="おなまえ", required, name="field_1669778")
+					dl.p-form-set__unit
+						dt
+							p 電話番号
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : 06-0000-0000", required, type="tel" name="field_1669779")
+					dl.p-form-set__unit
+						dt
+							p メールアドレス
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : info@btn-inc.jp", required, type="email", name="field_1669782")
+					dl.p-form-set__unit
+						dt
+							p ウェブサイトURL
+						dd
+							input.c-form__txt-input(placeholder="例 : http://btn-inc.jp", name="field_1669784")
+							
+					dl.p-form-set__unit
+						dt
+							p お問い合わせ区分
+							span 必須
+						dd
+							select.c-form__select(name="field_1669786", required)
+								option(value="") 選択してください
+								option(value="0") 企画・制作のご相談
+								option(value="1") サービス・プロダクトに関するお問い合わせ
+								option(value="2") 取材・メディア掲載依頼
+								option(value="3") 採用・リクルートに関するお問い合わせ
+								option(value="4") その他のお問い合わせ
+						
+					dl.p-form-set__unit
+						dt
+							p お問い合わせ内容
+							span 必須
+						dd
+							textarea.c-form__txtarea(placeholder="" cols="30" rows="7", required, name="field_1669791")
+					
+					dl.p-form-set__unit
+						dt
+							p.c-form__chk-input-wrap
+								input.c-form__chk-input(type="checkbox", required, name='isAgreement', id='isAgreement')
+								label(for='isAgreement')
+									個人情報保護方針に同意します
+							span 必須
+						dd
+
+			
+						
+			//SEC : 応募ボタン
+			section.p-sec-contact
+				div.c-btn
+					a(href="")
+						送信する
+				
+			include ../_include/_footer
+				

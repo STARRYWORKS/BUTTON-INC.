@@ -1,0 +1,202 @@
+extends ../_include/_layout
+
+block title
+	title ENTRY | CAREERS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='ENTRY | CAREERS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/careers/entry.html')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-careers-entry
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+		
+			//SEC : トップブロック
+			section.p-page-careers-entry-main
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/careers/ttl-careers-main.png" width="250")
+					
+				div.p-page-careers-entry-main__lead.c-lead
+					p.c-lead__txt
+						|送信の際は、<a href="/privacy/">個人情報保護方針</a>をご確認ください。
+						
+			//SEC : 採用職種別
+			section.p-form-set.c-form
+				form(action="https://pro.form-mailer.jp/fm/service/Forms/complete", method="post", name="form1", ENCTYPE="multipart/form-data")
+					input(type='hidden', name='key', value='821570f1102910')
+					input(type="hidden",name="code",value="utf8")
+					
+					dl.p-form-set__unit
+						dt
+							p 応募職種
+							span 必須
+						dd
+							select.c-form__select(name='field_1673939', required)
+								option(value='') 職種を選択してください
+								option(value='0') デザイナー
+								option(value='1') エンジニア
+					
+					dl.p-form-set__unit
+						dt
+							p お名前
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="お名前", required, name='field_1669795')
+					dl.p-form-set__unit
+						dt
+							p ふりがな
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="おなまえ", required, name='field_1669796')
+					dl.p-form-set__unit
+						dt
+							p 性別
+							span 必須
+						dd
+							div.p-form-set__unit__radiogroup
+								input.c-form__radio(type="radio", data-parsley-multiple="gender" required, checked, name='field_1669797', id='Male')
+								label(for='Male') 男性
+								input.c-form__radio(type="radio", data-parsley-multiple="gender" required, name='field_1669797', id='Female')
+								label(for='Female') 女性
+					dl.p-form-set__unit
+						dt
+							p 生年月日
+							span 必須
+						dd.p-form-set__unit__birth
+							div
+								input.c-form__txt-input(placeholder="例 : 1980年", required, name='field_1669801')
+							div
+								select.c-form__select(required, name='field_1669800')
+									option(value='') 月
+									option(value='0') 1月
+									option(value='1') 2月
+									option(value='2') 3月
+									option(value='3') 4月
+									option(value='4') 5月
+									option(value='5') 6月
+									option(value='6') 7月
+									option(value='7') 8月
+									option(value='8') 9月
+									option(value='9') 10月
+									option(value='10') 11月
+									option(value='11') 12月
+							div
+								select.c-form__select(required, name='field_1669802')
+									option(value='') 日
+									option(value='0') 1日
+									option(value='1') 2日
+									option(value='2') 3日
+									option(value='3') 4日
+									option(value='4') 5日
+									option(value='5') 6日
+									option(value='6') 7日
+									option(value='7') 8日
+									option(value='8') 9日
+									option(value='9') 10日
+									option(value='10') 11日
+									option(value='11') 12日
+									option(value='12') 13日
+									option(value='13') 14日
+									option(value='14') 15日
+									option(value='15') 16日
+									option(value='16') 17日
+									option(value='17') 18日
+									option(value='18') 19日
+									option(value='19') 20日
+									option(value='20') 21日
+									option(value='21') 22日
+									option(value='22') 23日
+									option(value='23') 24日
+									option(value='24') 25日
+									option(value='25') 26日
+									option(value='26') 27日
+									option(value='27') 28日
+									option(value='28') 29日
+									option(value='29') 30日
+									option(value='30') 31日
+					dl.p-form-set__unit
+						dt
+							p 郵便番号
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : 〒572-0011", required, name='field_1669803')
+					dl.p-form-set__unit.p-form-set__unit
+						dt
+							p 住所
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : 大阪市西区靱本町", required, name='field_1669804')
+					dl.p-form-set__unit
+						dt
+							p 電話番号
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : 06-0000-0000", required, name='field_1669805')
+					dl.p-form-set__unit
+						dt
+							p メールアドレス
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : info@btn-inc.jp", data-parsley-type="email", required, name='field_1669806')
+					dl.p-form-set__unit
+						dt
+							p ウェブサイトURL
+						dd
+							input.c-form__txt-input(placeholder="例 : http://btn-inc.jp", name='field_1669807')
+							p
+								※SNS、ご自身のポートフォリオサイトや実績のURL、ブログなど明記ください。
+					dl.p-form-set__unit
+						dt
+							p 最終学歴
+							span 必須
+						dd
+							input.c-form__txt-input(placeholder="例 : BUTTON大学卒業", required, name='field_1669808')
+							p
+								※「卒業」「卒業見込み」「在学中」「中退」まで明記ください。
+					dl.p-form-set__unit
+						dt
+							p アピール欄
+							span 必須
+						dd
+							textarea.c-form__txtarea(placeholder="", cols="30", rows="7", required, name='field_1669809')
+							p
+								※スキルや経験、その他アピールポイントをご記入ください。<br>
+								※過去に制作したものがあれば担当範囲を含めご記入ください。<br>
+								※希望条件・疑問等ありましたらこちらにご記入ください。
+					
+					dl.p-form-set__unit
+						dt
+							p.c-form__chk-input-wrap
+								input.c-form__chk-input(type="checkbox", required, name='isAgreement', id='isAgreement')
+								label(for='isAgreement')
+									個人情報保護方針に同意します
+							span 必須
+						dd
+							
+						
+			//SEC : 応募ボタン
+			section.p-sec-contact
+				div.c-btn
+					a(href="#")
+						送信する
+				
+			include ../_include/_footer
+				

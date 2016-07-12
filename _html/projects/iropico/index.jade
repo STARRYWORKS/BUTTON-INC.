@@ -1,0 +1,84 @@
+extends ../../_include/_layout
+
+block title
+	title いろぴこ | PROJECTS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='「いろぴこ」は、ちいさなお子さまのための知育アプリ。指で画面をタッチすると、色のなまえを教えてくれます。ちいさな手でもカンタンに操作できるから、しゃべりたい、遊びたい、知りたい、そんなお年頃のはじめてのアプリにぴったりです。')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='PLAYFUL BOOKS | PROJECTS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/projects/playful-books/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='「いろぴこ」は、ちいさなお子さまのための知育アプリ。指で画面をタッチすると、色のなまえを教えてくれます。ちいさな手でもカンタンに操作できるから、しゃべりたい、遊びたい、知りたい、そんなお年頃のはじめてのアプリにぴったりです。')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='「いろぴこ」は、ちいさなお子さまのための知育アプリ。指で画面をタッチすると、色のなまえを教えてくれます。ちいさな手でもカンタンに操作できるから、しゃべりたい、遊びたい、知りたい、そんなお年頃のはじめてのアプリにぴったりです。')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-projects-detail
+		include ../../_include/_gnav
+		include ../../_include/_humberger
+					
+		div#Main
+			div.c-ttl
+				h1.c-ttl__main
+					img(src="/images/projects/ttl-project-main.png" width="250")
+
+			section.p-sec-projects-detail
+				div.p-sec-projects-image.c-container
+					img(src="/images/projects/iropico/btn_works_iropiko.jpg")
+				
+				div.c-container
+
+					div.p-sec-projects-detail
+						div.p-sec-projects-detail__title
+							いろぴこ
+						div.p-sec-projects-detail__lead
+							いろの名前をおぼえるアプリ
+						div.p-sec-projects-detail-info
+							span
+								|Sep 5, 2015 Smartphone App
+							span Link: 
+								a(href="http://iro.pico-app.jp/", target="blank") http://iro.pico-app.jp/
+
+						p.p-sec-projects-detail__txt 
+							「いろぴこ」は、ちいさなお子さまのための知育アプリ。指で画面をタッチすると、色のなまえを教えてくれます。ちいさな手でもカンタンに操作できるから、しゃべりたい、遊びたい、知りたい、そんなお年頃のはじめてのアプリにぴったりです。
+							
+						div.p-sec-projects-detail__movie
+							|<iframe src="//player.vimeo.com/video/95970924" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							
+						div.p-sec-projects-detail__thums.p-thum-units
+							div.p-thum-units__unit
+								img(src="/images/projects/iropico/iropiko_details_03-thumb-620xauto-194.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/iropico/iropiko_details_07-thumb-620xauto-591.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/iropico/iropiko_details_08-thumb-620xauto-592.jpg")
+								
+						div.p-sec-projects-detail-credit
+							div.p-sec-projects-detail-credit__title
+								|CREDIT
+							p.p-sec-projects-detail-credit__content
+								|村井 亮史 (Planning / Produce / Direction) / 木村 幸司 (Art Direction / Technical Direction) / 所 晃弘 (App Development) / 菅濱 奈里 (UI ＆ Web Design) / 道久 好子 (Assistant ＆ Text) / 高阪 沙織 (Assistant)
+						div.p-sec-projects-detail-award
+							div.p-sec-projects-detail-award__title
+								|AWARD
+							p.p-sec-projects-detail-award__content
+								|Yahoo Internet Creative Award 2012 一般の部グランプリ <br>
+								|Tap App Awards 2013 最優秀賞<br>
+								文化庁メディア芸術祭 審査委員会推薦作品
+					
+					div.p-sec-contact
+						div.c-btn
+							a(href="/contact/")
+								お問い合わせ
+				
+			include ../../_include/_footer
+				

@@ -1,0 +1,41 @@
+doctype html
+html(lang="ja")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title="BUTTON INC."
+		meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+		meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+		meta(name='viewport', content='width=device-width, maximum-scale=1')
+		meta(property='og:title', content='BUTTON INC.')
+		meta(property='og:type', content='website')
+		meta(property='og:url', content='http://btn-inc.jp')
+		meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+		meta(property='og:site_name', content='')
+		meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+		meta(property='og:locale', content='ja_JP')
+		meta(name='twitter:card', content='summary_large_image')
+		meta(name='twitter:site', content='@button_inc')
+		meta(name='twitter:title', content='BUTTON INC.')
+		meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+		meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+		meta(name="author", content="BUTTON INC.")
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		link(rel='apple-touch-icon', href='http://btn-inc.jp/images/apple-touch-icon.png')
+		link(rel='shortcut icon', href='http://btn-inc.jp/images/favicon.ico')
+		link(rel='stylesheet', href='/css/app.css', type='text/css', media='all')
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-80346054-1', 'auto');
+				ga('send', 'pageview');
+	body.p-page-top
+		div#Canvas
+			canvas#Play
+		include ./_include/_gnav
+		include ./_include/_humberger
+
+		script(type='text/javascript', src='js/plugin.js')
+		script(type='text/javascript', src='js/main.js')

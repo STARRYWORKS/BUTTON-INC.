@@ -1,0 +1,153 @@
+extends ../_include/_layout
+
+block title
+	title ABOUT US | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='ABOUT US | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/about/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-about
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+			section.p-sec-main
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/about/ttl-about-main.png" width="250")
+					
+				div.p-sec-main__unit.c-lead
+					h2.c-lead__ttl 子どもたちと
+							span
+								豊かに関わる世界を作る
+					p.c-lead__txt
+						|BUTTON INC.はデジタル時代において子どもたちとのより豊かな関わり方をつくるクリエイティブプロダクションです
+						
+				div.p-sec-main__unit.c-lead
+					h2.c-lead__ttl
+						子どもと大人、二つの視点
+					p.c-lead__txt
+						時代にフィットした、子どもたちとの新しい関わり方を考えるためには、子ども目線で考えるだけでは十分ではありません。親やその周りの大人たちがどのように感じ、その結果どのような行動を起こすのか、その視点も重要です。私たちは、常に子どもと大人、二つの目線でモノゴトを捉え、考え、創り出していきます。
+						
+				div.p-sec-main__unit.c-lead
+					h2.c-lead__ttl
+						テクノロジーと手触りで魔法のような体験を
+					p.c-lead__txt
+						体を動かして汗をかくこと、自然に触れ合うこと、スクリーンの中であっても、その外側にある事象に興味が向くこと。私たちはテクノロジーを駆使しつつも、手触りのある体験を生み出すことを考え続けます。
+						
+			section.p-sec-service
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/about/ttl-about-service.png" width="250")
+				div.p-sec-service__lead.c-lead
+					p.c-lead__txt
+						子どもたちとのより良い関わり方をつくる事で、生活者と企業をつなぐお手伝いをします。
+				ul.p-sec-service__menu
+					li
+						span
+							img(src="/images/about/figure-service-web.png" alt="WebSite")
+					li
+						span
+							img(src="/images/about/figure-service-app.png" alt="Smartphone App")
+					li
+						span
+							img(src="/images/about/figure_service_insta.png" alt="Installation")
+					li
+						span
+							img(src="/images/about/figure-service-product.png" alt="Product")
+					
+			section.p-sec-member
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/about/ttl-about-member.png" width="250")
+				div.p-sec-member__units
+					dl.p-sec-member__unit
+						dt.p-sec-member__unit__pic
+							img(src="/images/about/pic-uratani.jpg")
+						dd.p-sec-member__unit__pos
+							|CEO / Producer
+						dd.p-sec-member__unit__name
+							浦谷 和生
+							
+					dl.p-sec-member__unit
+						dt.p-sec-member__unit__pic
+							img(src="/images/about/pic-kimura.jpg")
+						dd.p-sec-member__unit__pos
+							|Creative Director
+						dd.p-sec-member__unit__name
+							木村 幸司
+							
+					dl.p-sec-member__unit
+						dt.p-sec-member__unit__pic
+							img(src="/images/about/pic-kitomi.jpg")
+						dd.p-sec-member__unit__pos
+							|Art Director
+						dd.p-sec-member__unit__name
+							木富 慎介
+							
+					dl.p-sec-member__unit
+						dt.p-sec-member__unit__pic
+							img(src="/images/about/pic-kosaka.jpg")
+						dd.p-sec-member__unit__pos
+							|Design Engineer
+						dd.p-sec-member__unit__name
+							高阪 沙織
+						
+			section.p-sec-cprofile
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/about/ttl-about-cprofile.png" width="250")
+				dl.c-dlist
+					dt 社名
+					dd 株式会社BUTTON
+					
+					dt 所在地
+					dd
+						〒550-0004<br>
+						大阪府大阪市西区靱本町2-2-17 RE-006 201<br>
+						a(href="https://www.google.com/maps/place/STARRYWORKS+inc./@34.683869,135.489794,17z/data=!3m1!4b1!4m5!3m4!1s0x6000e6fea8970a6b:0x958b65bed59783da!8m2!3d34.683869!4d135.491988?hl=ja", target="blank") google map 
+						
+					dt TEL
+					dd
+						a(href="tel:0664455471")
+							|06-6445-5471
+						span
+							|(STARRYWORKS inc.と共同)
+							
+					dt 資本金
+					dd
+						|3,000,000円
+						
+					dt 役員
+					dd
+						代表取締役 浦谷 和生<br>
+						取締役 木村 幸司
+						
+					dt 関連会社
+					dd
+						a(href="http://starryworks.co.jp", target="blank") STARRYWORKS inc.<br>
+						a(href="http://death.co.jp", target="blank") 株式会社 闇
+						
+			section.p-sec-contact
+				div.c-btn
+					a(href="/contact/")
+						お問い合わせ
+				
+			include ../_include/_footer
+				

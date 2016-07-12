@@ -1,0 +1,82 @@
+extends ../../_include/_layout
+
+block title
+	title 魔法のスノードーム | PROJECTS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='人の動きに感知して、光や音の演出とともに雪が舞い上がり、魔法のような体験ができるインタラクティブなショーウィンドウ。2014年11月29日〜12月25日、グランフロント大阪南館1Fにて公開されました。')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='魔法のスノードーム | PROJECTS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/projects/magic-snowdome/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='人の動きに感知して、光や音の演出とともに雪が舞い上がり、魔法のような体験ができるインタラクティブなショーウィンドウ。2014年11月29日〜12月25日、グランフロント大阪南館1Fにて公開されました。')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='人の動きに感知して、光や音の演出とともに雪が舞い上がり、魔法のような体験ができるインタラクティブなショーウィンドウ。2014年11月29日〜12月25日、グランフロント大阪南館1Fにて公開されました。')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-projects-detail
+		include ../../_include/_gnav
+		include ../../_include/_humberger
+					
+		div#Main
+			div.c-ttl
+				h1.c-ttl__main
+					img(src="/images/projects/ttl-project-main.png" width="250")
+
+			section.p-sec-projects-detail
+				div.p-sec-projects-image.c-container
+					img(src="/images/projects/magic-snowdome/btn_works_snowdome.jpg")
+				
+				div.c-container
+
+					div.p-sec-projects-detail
+						div.p-sec-projects-detail__title
+							|魔法のスノードーム
+						div.p-sec-projects-detail__lead
+							動くと雪が舞い上がる、インタラクティブショーウィンドウ
+						div.p-sec-projects-detail-info
+							span
+								|Dec 17, 2014 Installation
+							span
+								|Client: 一般社団法人グランフロント大阪TMO
+							span
+								|Agency: 株式会社カクタス
+						p.p-sec-projects-detail__txt 
+							人の動きに感知して、光や音の演出とともに雪が舞い上がり、魔法のような体験ができるインタラクティブなショーウィンドウ。2014年11月29日〜12月25日、グランフロント大阪南館1Fにて公開されました。
+							
+						div.p-sec-projects-detail__movie
+							|<iframe src="//player.vimeo.com/video/113513624" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							
+						div.p-sec-projects-detail__thums.p-thum-units
+							div.p-thum-units__unit
+								img(src="/images/projects/magic-snowdome/snowdome_details_01-thumb-620xauto-624.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/magic-snowdome/snowdome_details_02-thumb-620xauto-625.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/magic-snowdome/snowdome_details_03-thumb-620xauto-626.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/magic-snowdome/snowdome_details_05-thumb-620xauto-628.jpg")
+								
+						div.p-sec-projects-detail-credit
+							div.p-sec-projects-detail-credit__title
+								|CREDIT
+							p.p-sec-projects-detail-credit__content
+								|木村 幸司 (Planning / Technical Direction) / 浦谷 和生 (Direction) / 高阪 沙織 (Development) / 中尾 祥羽子 (Assistant) / 谷口 智則 (Illustration) / 谷口 彩子 (Sound)
+
+
+					
+					div.p-sec-contact
+						div.c-btn
+							a(href="/contact/")
+								お問い合わせ
+				
+			include ../../_include/_footer
+				

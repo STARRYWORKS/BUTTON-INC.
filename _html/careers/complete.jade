@@ -1,0 +1,50 @@
+extends ../_include/_layout
+
+block title
+	title CAREERS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='ENTRY | CAREERS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/careers/entry.html')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-careers-complete
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+		
+			//SEC : トップブロック../.DS_Store
+			section.p-sec-careers-complete-main
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/careers/ttl-careers-main.png" width="250")
+					
+				div.p-sec-careers-complete-main__lead.c-lead
+					p.c-lead__txt
+						|ご応募ありがとうございました。<br>3〜5営業日以内を目安に担当者よりご返答させて頂きます。
+						
+							
+						
+			//SEC : 応募ボタン
+			section.p-sec-contact
+				div.c-btn
+					a(href="/")
+						トップページへもどる
+				
+			include ../_include/_footer
+				

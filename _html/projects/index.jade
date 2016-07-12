@@ -1,0 +1,79 @@
+extends ../_include/_layout
+
+block title
+	title PROJECTS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='PROJECTS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/projects/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-projects
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+			section.p-sec-projects
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/projects/ttl-project-main.png" width="250")
+					
+				div.p-sec-projects__units
+					a(href="/projects/playful-books/")
+						dl.p-sec-projects__unit
+							dt.p-sec-projects__unit__pic
+								img(src="/images/projects/playful-books/btn_works_PB_thumb.jpg", width="620", height="348")
+							dd.p-sec-projects__unit__title
+								|PLAYFUL BOOKS
+							dd.p-sec-projects__unit__lead
+								スマートフォンで楽しさ広がる「まほうのえほん」
+								
+					a(href="/projects/magic-snowdome/")
+						dl.p-sec-projects__unit
+							dt.p-sec-projects__unit__pic
+								img(src="/images/projects/magic-snowdome/snowdome_cover.jpg", width="620", height="348")
+							dd.p-sec-projects__unit__title
+								魔法のスノードーム
+							dd.p-sec-projects__unit__lead
+								動くと雪が舞い上がる、インタラクティブショーウィンドウ
+								
+					a(href="/projects/papapapiano/")
+						dl.p-sec-projects__unit
+							dt.p-sec-projects__unit__pic
+								img(src="/images/projects/papapapiano/btn_works_papapa_thumb.jpg", width="620", height="348")
+							dd.p-sec-projects__unit__title
+								ぱぱぱPIANO
+							dd.p-sec-projects__unit__lead
+								録画したみんなの声と映像で曲を奏でる不思議なピアノ
+								
+					a(href="/projects/iropico/")
+						dl.p-sec-projects__unit
+							dt.p-sec-projects__unit__pic
+								img(src="/images/projects/iropico/btn_works_iropiko_thumb.jpg", width="620", height="348")
+							dd.p-sec-projects__unit__title
+								いろぴこ
+							dd.p-sec-projects__unit__lead
+								いろの名前をおぼえるアプリ
+
+						
+			section.p-sec-contact
+				div.c-btn
+					a(href="/contact/")
+						お問い合わせ
+				
+			include ../_include/_footer
+				

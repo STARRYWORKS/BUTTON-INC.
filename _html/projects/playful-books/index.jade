@@ -1,0 +1,83 @@
+extends ../../_include/_layout
+
+block title
+	title PLAYFUL BOOKS | PROJECTS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='"PLAYFUL BOOKS"はスマートフォンをセットして体験性を拡張できる、魔法のような絵本です。 ')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='PLAYFUL BOOKS | PROJECTS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/projects/playful-books/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='"PLAYFUL BOOKS"はスマートフォンをセットして体験性を拡張できる、魔法のような絵本です。')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='"PLAYFUL BOOKS"はスマートフォンをセットして体験性を拡張できる、魔法のような絵本です。 ')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-projects-detail
+		include ../../_include/_gnav
+		include ../../_include/_humberger
+					
+		div#Main
+			div.c-ttl
+				h1.c-ttl__main
+					img(src="/images/projects/ttl-project-main.png" width="250")
+
+			section.p-sec-projects-detail
+				div.p-sec-projects-image.c-container
+					img(src="/images/projects/playful-books/btn_works_PB.jpg" width="250")
+				
+				div.c-container
+
+					div.p-sec-projects-detail
+						div.p-sec-projects-detail__title
+							|PLAYFUL BOOKS
+						div.p-sec-projects-detail__lead
+							スマートフォンで楽しさひろがる「まほうのえほん」
+						div.p-sec-projects-detail-info
+							span
+								|Sep 8, 2014 Product / Smartphone App
+							span Link: 
+								a(href="http://playful-books.com/", target="blank") http://playful-books.com/
+	
+						p.p-sec-projects-detail__txt 
+							"PLAYFUL BOOKS"はスマートフォンをセットして体験性を拡張できる、魔法のような絵本です。専用の絵本にスマートフォンをセットする事で、今読んでいるページに合わせたBGMや効果音、照明などの演出や、絵本をノックすると返答が返ってくる等のインタラクティブ性を付与し、アナログな絵本の体験性を拡張する事ができます。「くれよんのかくれんぼ」「こん こん こん」の２タイトルの絵本（日本語版/英語版）を販売中です。
+							
+						div.p-sec-projects-detail__movie
+							|<iframe src="//player.vimeo.com/video/105257495" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							
+						div.p-sec-projects-detail__thums.p-thum-units
+							div.p-thum-units__unit
+								img(src="/images/projects/playful-books/PB_starry_detail_02-thumb-620xauto-608.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/playful-books/PB_starry_detail_03-thumb-620xauto-609.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/playful-books/PB_starry_detail_04-thumb-620xauto-610.jpg")
+								
+						div.p-sec-projects-detail-credit
+							div.p-sec-projects-detail-credit__title
+								|CREDIT
+							p.p-sec-projects-detail-credit__content
+								|木村 幸司 (Produce / Planning /Art Direction / Technical Direction) / 浦谷 和生 (Produce / Planning / Direction) / 道久 好子 (Direction / Copy Writing) / 木富 慎介 (Design / Illustration) / 田村 緒里絵 (Design / Photo Retouching) / 高阪 沙織 (App Development) / 森下 薫 (Mark up) / 中尾 祥羽子 (Mark up) / 高橋 友果 (Research) / Triplet Studio 栗原 康（Photo) / 坂口 淳子（Styling） / 三浦 由美（Hair & Make） / PERSON Inc. ANIKA（Model）/ Patrick Taylor（Translation） / 谷口 彩子（Music）/生駒 祐子 (Sound) / 森 麻由美 (Translation) / 谷口 智則 (Illustration) / henlywork (sound)
+
+						div.p-sec-projects-detail-award
+							div.p-sec-projects-detail-award__title
+								|AWARD
+							p.p-sec-projects-detail-award__content
+								|Yahoo Internet Creative Award 2014 スマートデバイスイノベーション部門 SILVER
+					
+					div.p-sec-contact
+						div.c-btn
+							a(href="/contact/")
+								お問い合わせ
+				
+			include ../../_include/_footer
+				

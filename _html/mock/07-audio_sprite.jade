@@ -1,0 +1,49 @@
+doctype html
+html(lang="ja")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title="BUTTON INC."
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(property="og:site_name", content="")
+		meta(property="og:title", content="")
+		meta(property="og:description", content="")
+		meta(property="og:url", content="http://btn-inc.jp/")
+		meta(property="og:image", content="")
+		meta(property="og:type", content="")
+		meta(property="og:locale", content="")
+		meta(property="twitter:card", content="")
+		meta(property="twitter:description", content="")
+		meta(property="twitter:image:src", content="")
+		meta(property="twitter:creator", content="@btn-inc")
+		meta(property="twitter:site", content="http://btn-inc.jp/")
+		meta(property="twitter:title", content="BUTTON INC.")
+		meta(name="author", content="BUTTON INC.")
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		link(rel="stylesheet" href="../css/app.css" type="text/css")
+		style.
+			ul {
+				font-size: 16px;
+				width: 300px;
+				margin: auto;
+				padding: 40px 10px;
+			}
+			li {
+				margin-bottom: 16px;
+			}
+	body
+		ul
+			li
+				a(href="#", class="play") 再生
+			li
+				a(href="#", class="loop") ループ
+			li
+				a(href="#", class="fadein") ループ:フェードイン
+			li
+				a(href="#", class="stop") 停止
+			li
+				a(href="#", class="fadeout") 停止:フェードアウト
+
+		script(src="../js/plugin.js")
+		script(src="../js/mock/07-audio_sprite/main.js")

@@ -1,0 +1,36 @@
+html,body {
+	font-family: sans-serif;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+::selection {
+	background: #FDF663;
+}
+
+#MainArea {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+#Canvas,
+#MainArea,
+#MainCanvas,
+#Play,
+#PixiCanvas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#Play {
+	z-index: 1;
+}
+#PixiCanvas {
+	z-index: 0;
+}

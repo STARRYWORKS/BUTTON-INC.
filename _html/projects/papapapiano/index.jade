@@ -1,0 +1,72 @@
+extends ../../_include/_layout
+
+block title
+	title ぱぱぱPIANO | PROJECTS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='録画した声と映像が楽器になる「ぱぱぱPIANO」は、自分自身が楽器になる作品です。 ')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='ぱぱぱPIANO | PROJECTS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/projects/papapapiano/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='録画した声と映像が楽器になる「ぱぱぱPIANO」は、自分自身が楽器になる作品です。 ')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='録画した声と映像が楽器になる「ぱぱぱPIANO」は、自分自身が楽器になる作品です。 ')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-projects-detail
+		include ../../_include/_gnav
+		include ../../_include/_humberger
+					
+		div#Main
+			div.c-ttl
+				h1.c-ttl__main
+					img(src="/images/projects/ttl-project-main.png" width="250")
+
+			section.p-sec-projects-detail
+				div.p-sec-projects-image.c-container
+					img(src="/images/projects/papapapiano/btn_works_papapa.jpg")
+				
+				div.c-container
+
+					div.p-sec-projects-detail
+						div.p-sec-projects-detail__title
+							|ぱぱぱPIANO
+						div.p-sec-projects-detail__lead
+							録画したみんなの声と映像で曲を奏でる不思議なピアノ
+						div.p-sec-projects-detail-info
+							span
+								|Nov 10, 2013 Installation
+
+						p.p-sec-projects-detail__txt 
+							録画した声と映像が楽器になる「ぱぱぱPIANO」は、自分自身が楽器になる作品です。マットスイッチ上にたつと通常の自動演奏モードから録画モードになって、スポットライトがあてられ、声を出すと録画が開始されます。録音された音声は解析され、声のキーごとに音声と映像がMIDIピアノのキーボードに割り振られ、みんなの声と映像で演奏できるようになります
+							
+						div.p-sec-projects-detail__thums.p-thum-units
+							div.p-thum-units__unit
+								img(src="/images/projects/papapapiano/papapa_details-thumb-620xauto-516.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/papapapiano/papapa_details04-thumb-620xauto-519.jpg")
+							div.p-thum-units__unit
+								img(src="/images/projects/papapapiano/papapa_details05-thumb-620xauto-520.jpg")
+								
+						div.p-sec-projects-detail-credit
+							div.p-sec-projects-detail-credit__title
+								|CREDIT
+							p.p-sec-projects-detail-credit__content
+								|木村 幸司 (Produce / Planning / Technical Direction / Design) / 高阪 沙織 (Programming) / 道久 好子 (Direction)
+					
+					div.p-sec-contact
+						div.c-btn
+							a(href="/contact/")
+								お問い合わせ
+				
+			include ../../_include/_footer
+				

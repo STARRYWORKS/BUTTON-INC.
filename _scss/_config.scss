@@ -1,0 +1,21 @@
+// ==========================================================================
+// breakpoints
+// ==========================================================================
+
+$breakpoints: (
+	'sp': 'only screen and (max-width: 599px)',
+    'tb': 'only screen and (max-width: 768px)',
+    'npc': 'only screen and (min-width: 769px) and (max-width: 980px)',
+    'lpc': 'only screen and (min-width:981px)'
+) !default;
+
+@mixin media-query($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}

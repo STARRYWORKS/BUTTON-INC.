@@ -1,0 +1,135 @@
+extends ../_include/_layout
+
+block title
+	title CAREERS | BUTTON INC.
+	
+block meta
+	meta(name='description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='keywords', content='BUTTON INC, button inc, 株式会社BUTTON, 株式会社ボタン')
+	meta(name='viewport', content='width=device-width, maximum-scale=1')
+	meta(property='og:title', content='CAREERS | BUTTON INC.')
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='http://btn-inc.jp/careers/')
+	meta(property='og:image', content='http://btn-inc.jp/images/og.png')
+	meta(property='og:site_name', content='')
+	meta(property='og:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(property='og:locale', content='ja_JP')
+	meta(property='fb:app_id', content='BUTTON INC.')
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@button_inc')
+	meta(name='twitter:title', content='BUTTON INC.')
+	meta(name='twitter:description', content='子どもとの新しいコミュニケーションをつくる会社')
+	meta(name='twitter:image', content='http://btn-inc.jp/images/og.png')
+
+block body
+	body.p-page-careers
+		include ../_include/_gnav
+		include ../_include/_humberger
+					
+		div#Main.c-container
+		
+			//SEC : トップブロック
+			section.p-sec-careers-main
+				div.c-ttl
+					h1.c-ttl__main
+						img(src="/images/careers/ttl-careers-main.png" width="250")
+					
+				div.p-sec-careers__lead.c-lead
+					h2.c-lead__ttl
+						子どもと大人、二つの目線で、<span>関わり方をつくる</span>
+					p.c-lead__txt
+						|子どものように素直に感じ、大人らしく論理的に考えられる、柔軟な視点と思考力をもった人材を募集しています。
+						
+			//SEC : 採用職種別
+			h1.kazu1
+				募集職種
+
+			section.p-sec-careers-jobcat-units
+
+				//デザイナー
+				div.p-sec-careers-jobcat-units__unit
+			
+					div.c-ttl.p-sec-careers-jobcat-units__unit_ttl
+						h1.c-ttl__sub--left
+							|デザイナー
+					dl.c-dlist-long.p-sec-careers-jobcat-units__unit__list
+						dt 応募資格
+						dd 
+							年齢、学歴不問<br>
+							実務経験2年以上<br>
+							子どもが好きな方
+						dt 業務内容
+						dd
+							ウェブサイト・グラフィック・アプリ・インスタレーション・プロダクトなどのデザイン業務
+						dt 必要なスキル
+						dd
+							|Illustrator、Photoshopの基本操作ができる方。明るくて元気な方。自発的に考え、表現を提案できる方
+							
+						dt 歓迎するスキル
+						dd
+							イラストを中心に世界観を作り上げられる方、3Dモデリングの経験がある方、スクリーンやペーパーメディアだけでなく、3次元造作物のデザイン経験がある方
+							
+				//デザイナー
+				div.p-sec-careers-jobcat-units__unit
+			
+					div.c-ttl.p-sec-careers-jobcat-units__unit_ttl
+						h1.c-ttl__sub--left
+							|エンジニア
+					dl.c-dlist-long.p-sec-careers-jobcat-units__unit__list
+						dt 応募資格
+						dd 
+							年齢、学歴不問<br>
+							実務経験2年以上<br>
+							子どもが好きな方
+						
+						dt 業務内容
+						dd
+							ウェブサイトやアプリ、プロダクト、インスタレーション等の設計・プログラミング業務	<br>
+							ハードウェアデバイスの設計・製作業務	
+						dt 必要なスキル
+						dd
+							|C++ / Swift / Javascript / Python / Arduino / MaxMSP のいずれかに精通している
+						dt 歓迎するスキル
+						dd
+							サーバーサイドのプログラミングやインフラ構築の経験
+			
+			//SEC : 募集要項
+			h1.kazu2
+				募集条件
+
+			section.p-sec-application
+				dl.c-dlist-long.p-sec-application__unit
+					dt 雇用形態
+					dd
+						正社員（中途）<br>
+						※実務経験内容により
+						試用期間3ヶ月あり
+						
+					dt 勤務地
+					dd 大阪
+					
+					dt 勤務時間
+					dd 10:00～19:00
+				
+				dl.c-dlist-long.p-sec-application__unit
+					dt 給与
+					dd 経験・能力を考慮し、面談の上決定
+					
+					dt 諸手当
+					dd 交通費支給（上限2万円/月）
+					
+					dt 休日・休暇
+					dd 週休2日・祝日・夏期・年末年始・有給休暇
+					
+					dt 保険
+					dd 健康保険、厚生年金、雇用保険
+			
+						
+			//SEC : 応募ボタン
+			section.p-sec-contact
+				div.c-btn
+					a(href="/careers/entry.html")
+						応募フォームへ
+				
+			include ../_include/_footer
+				

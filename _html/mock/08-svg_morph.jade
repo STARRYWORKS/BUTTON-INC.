@@ -1,0 +1,74 @@
+doctype html
+html(lang="ja")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title="BUTTON INC."
+		meta(name="keywords", content="")
+		meta(name="description", content="")
+		meta(property="og:site_name", content="")
+		meta(property="og:title", content="")
+		meta(property="og:description", content="")
+		meta(property="og:url", content="http://btn-inc.jp/")
+		meta(property="og:image", content="")
+		meta(property="og:type", content="")
+		meta(property="og:locale", content="")
+		meta(property="twitter:card", content="")
+		meta(property="twitter:description", content="")
+		meta(property="twitter:image:src", content="")
+		meta(property="twitter:creator", content="@btn-inc")
+		meta(property="twitter:site", content="http://btn-inc.jp/")
+		meta(property="twitter:title", content="BUTTON INC.")
+		meta(name="author", content="BUTTON INC.")
+		meta(name="viewport", content="width=device-width, user-scalable=no")
+		link(rel="stylesheet" href="../css/mock/10-svg_morph/style.css" type="text/css")
+	body
+		div.input-area
+			- for (var i = 1; i<= 4; i++) {
+				div.input-box
+					p
+						label(for="SVG#{i}") SVG#{i}
+					div
+						textarea(id="SVG#{i}", name="SVG#{i}", cols="30", rows="10")
+			- }
+			div.ajust-area
+				- for (var i = 1; i <= 3; i++) {
+					div.ajust-box(data-target="svg#{i}to#{i+1}")
+						p.duration
+							|Duration
+							input(type="text" value="600")
+							|ms
+						p.ease
+							|Easing
+							select(id="Svg#{i}Easing1", name="Svg#{i}Easing1")
+								option(value="Sine") Sine
+								option(value="Quad") Quad
+								option(value="Cubic") Cubic
+								option(value="Quart") Quart
+								option(value="Quint") Quint
+								option(value="Expo") Expo
+								option(value="Circ") Circ
+								option(value="Back") Back
+								option(value="Elastic") Elastic
+								option(value="Bounce") Bounce
+							select(id="Svg#{i}Easing2", name="Svg#{i}Easing2")
+								option(value="In") In
+								option(value="Out") Out
+								option(value="InOut") InOut
+				- }
+		div#Canvas
+			canvas#Play
+		div.controller
+			ul
+				li.js-play
+					a(href="#") PLAY
+				li.js-stop
+					a(href="#") STOP
+				li.js-select
+					select#Type(name="Type")
+						option(value="1") Once
+						option(value="2") Loop
+						option(value="3") Forwarfd & Back
+
+		script(type='text/javascript', src='../js/plugin.js')
+		script(type='text/javascript', src='../js/mock/08-svg_morph/main.js')
