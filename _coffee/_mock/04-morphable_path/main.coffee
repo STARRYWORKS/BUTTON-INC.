@@ -1,8 +1,5 @@
 Config = require 'config'
-Touch = require './../../utils/touch'
 Localizables = require './../../utils/localizables'
-SimpleEventDispatcher = require 'event'
-DatGUI = require './../../utils/dat'
 PaperStage = require 'paper-stage'
 Btn = require 'btn'
 Base = require 'base'
@@ -57,17 +54,12 @@ class Main
 		# update
 		paper.view.onFrame = @onUpdate
 
-		# デバッグ用コンソール
-		@dat = new DatGUI(@)
-
-
 
 	# 
 	# メインupdate
 	# 
 	onUpdate: =>
-		TWEEN.update()
-		# if @btn? then @btn.update()
+		paper.view.update(true)
 		return
 
 	# 

@@ -73,34 +73,6 @@ class FluidablePath extends paper.Path
 		return
 
 
-	#
-	# 前後のアンカーポイントの位置を元に線がスムースになるようにコントロールポイントを調整する
-	#
-	smoothSegment: (segment,left,right,factor) ->
-		distanceL = if left? then segment.point.getDistance(left) else 0
-		distanceR = if right? then segment.point.getDistance(right) else 0
-
-		radian = 0
-		if left? && right?
-			radianL = segment.point.getAngleInRadians(left)
-			radianR = segment.point.getAngleInRadians(right)
-			radian = radianL + (radianR-radianL) * 0.5 + Math.PI * 0.5
-		else if left?
-			radian = segment.point.getAngleInRadians(left)
-		else if right?
-			radian = segment.point.getAngleInRadians(right)
-
-
-		if left? && right?
-			if radian < Math.PI * -0.5 || radian > Math.PI * 0.5 then distanceR *= -1
-			else distanceL *= -1
-
-		segment.handleIn.x = Math.cos(radian) * distanceL * factor
-		segment.handleIn.y = Math.sin(radian) * distanceL * factor
-		segment.handleOut.x = Math.cos(radian) * distanceR * factor
-		segment.handleOut.y = Math.sin(radian) * distanceR * factor
-		return
-
 	# 
 	# データ更新
 	#
@@ -124,13 +96,6 @@ class FluidablePath extends paper.Path
 			fluidSegment.handleIn.y = baseSegment.handleIn.y
 			fluidSegment.handleOut.x = baseSegment.handleOut.x
 			fluidSegment.handleOut.y = baseSegment.handleOut.y
-
-		# fluidSegmentのスムース化
-		# @fluidPath.smooth()
-		# for fluidSegment,i in @fluidPath.segments
-		# 	left = if i > 0 then @fluidPath.segments[i-1].point else null
-		# 	right = if i < @fluidPath.segments.length-1 then @fluidPath.segments[i+1].point else null
-		# 	@smoothSegment(fluidSegment,left,right,@smoothFactor)
 
 		# Flexibilityに応じて各ポイントを計算
 		for fluidSegment,i in @fluidPath.segments

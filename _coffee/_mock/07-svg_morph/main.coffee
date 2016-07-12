@@ -131,8 +131,7 @@ class Main
 	# 
 	onUpdate: =>
 		TWEEN.update()
-		@paper.update()
-	
+
 		@context.clearRect(0,0,@stageWidth,@stageHeight)
 		paper.view.update(true)
 

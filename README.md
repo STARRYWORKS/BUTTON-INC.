@@ -1,6 +1,4 @@
 # BUTTON INC.
-## サイト
-[http://btn-inc.jp](http://btn-inc.jp)
 
 ### 環境設定
 ・gulp-audiospriteを使用するのにffmpegが必要です。

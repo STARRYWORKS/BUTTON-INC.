@@ -63,23 +63,5 @@ class PaperStage
 		@stage.position = new paper.Point(_x, _y)
 		return
 
-	# 
-	# アップデート
-	# 
-	update: ()->
-		switch parseInt(@anchorShowStatus)
-			when PaperStage.HIDE
-				@stage.selected = false
-				@stage.fullySelected = false
-
-			when PaperStage.SHOW
-				@stage.fullySelected = false
-				@stage.selected = true
-
-			when PaperStage.SHOW_ALL
-				@stage.selected = false
-				@stage.fullySelected = true
-
-		return
 
 module.exports = PaperStage

@@ -8,7 +8,6 @@ class DatOption
 		@speed = 0.01
 		@amplitude = 1
 		@numWaves = 10
-		@smoothFactor = 0.3
 		@fixEnds = true
 		return
 
@@ -28,6 +27,7 @@ class DatGUI extends dat.GUI
 		console.log fulidables
 
 		@add(@datOption, 'flexibility', 0, 1).onChange ()=>
+			@fulidables[0].flexibility = @datOption.flexibility
 			for fulidable in @fulidables
 				fulidable.flexibility = @datOption.flexibility
 
@@ -42,10 +42,6 @@ class DatGUI extends dat.GUI
 		@add(@datOption, 'numWaves', 0, 30).onChange ()=>
 			for fulidable in @fulidables
 				fulidable.numWaves = @datOption.numWaves
-
-		@add(@datOption, 'smoothFactor', 0, 1).onChange ()=>
-			for fulidable in @fulidables
-				fulidable.smoothFactor = @datOption.smoothFactor
 
 		@add(@datOption, 'fixEnds').onChange ()=>
 			for fulidable in @fulidables

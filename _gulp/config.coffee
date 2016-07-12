@@ -15,10 +15,9 @@ entry = {
 	"mock/03-cos_sin/main"							: "./_coffee/_mock/03-cos_sin/main.coffee"
 	"mock/04-morphable_path/main"				: "./_coffee/_mock/04-morphable_path/main.coffee"
 	"mock/05-fluidable_path/main"				: "./_coffee/_mock/05-fluidable_path/main.coffee"
-	"mock/06-paper_position_check/main"	: "./_coffee/_mock/06-paper_position_check/main.coffee"
-	"mock/07-audio_sprite/main"					: "./_coffee/_mock/07-audio_sprite/main.coffee"
-	"mock/08-svg_morph/main"						: "./_coffee/_mock/08-svg_morph/main.coffee"
-	"mock/09-custom_stroke/main"				: "./_coffee/_mock/09-custom_stroke/main.coffee"
+	"mock/06-audio_sprite/main"					: "./_coffee/_mock/06-audio_sprite/main.coffee"
+	"mock/07-svg_morph/main"						: "./_coffee/_mock/07-svg_morph/main.coffee"
+	"mock/08-custom_stroke/main"				: "./_coffee/_mock/08-custom_stroke/main.coffee"
 	"contents"													: "./_coffee/contents/main.coffee"
 }
 

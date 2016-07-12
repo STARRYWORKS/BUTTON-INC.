@@ -1,22 +1,20 @@
 Config								= require 'config'
 PaperStage						= require 'paper-stage'
-DatGUI								= require './dat'
-FluidablePath	= require 'fluidable-path'
+CustomStroke	= require 'custom-stroke'
 
 ###
 auth: Kimura
 data: 2016/05/20
 ###
+ESCAPE = "Escape"
 
 class Main
 	constructor: () ->
 		@dpr = if window.devicePixelRatio == undefined then 1 else window.devicePixelRatio
 		@$window = $(window)
-		$("#Canvas").append('<canvas id="'+Config.Canvas.paper+'">')
 		@$canvas = $("#" + Config.Canvas.paper)
 		@canvas = @$canvas.get(0)
 		@context = @canvas.getContext('2d')
-		@isFirstScene = true
 
 		# paper.js 設定
 		@paper = new PaperStage(@$canvas,@dpr)
@@ -24,7 +22,7 @@ class Main
 		# イベント設定
 		@$window.on('resize', @onResize).trigger('resize')
 
-		# Container
+
 		@container = new paper.Group()
 		@paper.stage.addChild @container
 
@@ -35,33 +33,27 @@ class Main
 		# 骨格の線
 		@bone = @baseSVG.children[1]
 		@bone.strokeWidth = 0.25
-		@bone.strokeColor = '#ff0000'
+		@bone.strokeColor = new paper.Color 255,0,0,1
 		@bone.fillColor = new paper.Color 0,0,0,0
 		@container.addChild @bone
 
-		@fluid = new FluidablePath @bone
-		@fluid.strokeWidth = 0.25
-		@fluid.strokeColor = '#0000ff'
-		@fluid.fillColor = new paper.Color 0,0,0,0
-		@container.addChild @fluid
-		@fluid.selected = true
-		@fluid.fullySelected = true
+		# custom stroke
+		@stroke = new CustomStroke @bone, 5.5, [
+			[0.5,		0.5]
+			[0,			0]
+			[2.75,	0]
+			[2.75,	0]
+			[0,			0]
+			[0.5,		0.5]
+		]
+		@stroke.strokeWidth = 0
+		@stroke.fillColor = new paper.Color 0,0,0,0.1
+		@stroke.selected = true
+		@stroke.fullySelected = true
+		@container.addChild @stroke
 
+		@container.scale(2)
 
-		@container.scale(4)
-		@dat = new DatGUI([@fluid])
-
-
-		# update
-		paper.view.onFrame = @onUpdate
-
-		return
-
-	# 
-	# メインupdate
-	# 
-	onUpdate: =>
-		@fluid.update()
 		paper.view.update(true)
 		return
 
@@ -85,3 +77,5 @@ class Main
 $(()->
 	window.main = new Main()
 )
+
+
